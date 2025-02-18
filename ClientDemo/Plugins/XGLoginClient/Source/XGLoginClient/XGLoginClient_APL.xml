@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--// Copyright (c) XiaoGang.2024.All Rights Reserved.-->
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!--添加Import语句到GameActivity-->
+  <gameActivityImportAdditions>
+    <insert>
+      import android.content.Context;
+      import android.provider.Settings;
+    </insert>
+  </gameActivityImportAdditions>
+  
+  
+  <gameActivityClassAdditions>
+    <insert>
+      public String GetName()
+      {
+      return "www.ngcod.com/java/";
+      }
+      public String GetInfo(String name, int age, int height, String address, boolean sex)
+      {
+      return "Name:" + name + ". age=" + age + ". height=" + height + ". Address:" + address + ". Sex:" + sex;
+      }
+      public String getDeviceId(Context context) 
+      {
+      return Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
+      }
+
+
+    </insert>
+  </gameActivityClassAdditions>
+</root>

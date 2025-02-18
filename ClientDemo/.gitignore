@@ -1,0 +1,14 @@
+/Binaries/
+/Build/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+/Developers/
+/Collections/
+/Plugins/**/Binaries/
+/Plugins/**/Intermediate/
+.vs
+*.sln
+.vsconfig
+
+
